@@ -1,1 +1,5 @@
 print("My name is Aviana")
+print(4)
+print("Hello Python \n")
+print("hello",5)
+print("welcome to ", end= "*")
