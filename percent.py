@@ -9,5 +9,5 @@ print("Sum of math, english, science and hindi = ",sum)
 
 perc = (sum/400)*100
 
-print(end= "Percentage Mrk = ")
+print(end= "Percentage Mark = ")
 print(perc)
