@@ -5,6 +5,7 @@ print(f"You have {orignal_count} chores to finish today\n")
 complete_count = 0
 chore_num = 1
 
+
 while chore_num <= total_chores:
     if chore_num == 1:
         next_chore = "Make your bed"
@@ -43,10 +44,10 @@ while test_value <= 0:
 print("\n===== CHORE CHECKLIST SUMMARY =====")
 print("\n===== CHORE CHECKLIST SUMMARY =====")
 
-print("Chores Assigned Today:", original_count)
+print("Chores Assigned Today:", orignal_count)
 
-print("Chores Completed:", completed_count)
+print("Chores Completed:", complete_count)
 
-print("Chores Remaining:", total_chores - completed_count)
+print("Chores Remaining:", total_chores - complete_count)
 
 print("======================================")
