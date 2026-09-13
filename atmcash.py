@@ -46,4 +46,24 @@ while serving:
     customers_served += 1
     total_dispensed += amount
                         
-            
+    print(f"transaction complete, {name}!\n")
+    again = input("Next customer (yes/no) ").strip().lower()
+    if again != "yes":
+        serving = False
+
+print("\n Daily Denomination Report")
+for slot in range(1,7):
+    if slot == 1: value, total = 100, total_100
+    elif slot == 2: value, total = 50, total_50
+    elif slot == 3: value, total = 20, total_20
+    elif slot == 3: value, total = 10, total_10
+    elif slot == 4: value, total = 5, total_5
+    else: value, total = 1, total_1
+    if total > 0:
+        print(f"  {value} - units notes dispensed : {total} " , end="")
+        for note in range(total):
+            print("=" ,end="")
+        print()
+print(f"\nCustomers served : {customers_served}")
+print(f"Total dispensed : {total_dispensed} units")
+print("ATM session closed. Goodbye!")
