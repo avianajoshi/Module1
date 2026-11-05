@@ -17,3 +17,28 @@ rounded_total = round(total_cost, 2)
 print("Total Cost:", rounded_total)
 
 amount_paid = float(input("Enter the amount paid by the customers: "))
+
+def calculate_change(paid, total):
+    change = paid - total
+    return change
+
+change_due = calculate_change(amount_paid, rounded_total)
+rounded_change = round(change_due, 2)
+
+def thank_you_massage(cups):
+    if cups >= 5:
+        return "Wow, big order! Thanks so much for your support!"
+    else:
+        return "Thanks for stopping by the stand!"
+
+closing_message = thank_you_massage(cups_sold)
+
+print()
+print("===== LEMONADE STAND RECEIPT =====")
+print("Price Per Cup:", price_per_cup )
+print("Cups Sold:", cups_sold )
+print("Total Cost:", rounded_total )
+print("Amount Paid:", amount_paid )
+print("Change Due:", rounded_change )
+print(closing_message)
+print("==================================")

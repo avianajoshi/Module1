@@ -13,7 +13,7 @@ while range(1,6):
         if hearts == 0:
             print(f"Sorry! You lose the answer was, {secret}.")
     else:
-        print("Your answer was to0 low.")
+        print("Your answer was too low.")
         hearts = hearts - 1
         print(f"You have {hearts} hearts left.")
         if hearts == 0:
